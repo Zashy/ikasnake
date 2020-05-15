@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The Snake Extravaganza</title>
+  <title>The Void Monthly Zine!</title>
   <meta name="description" content="Party Invite">
   <meta name="author" content="Zashyshy">
 
@@ -13,20 +13,21 @@
 
   <style type="text/css">
     html, body {
+      align-items: center;
+      color: #bd1c4a;
+      display: flex;
+      flex-direction: column;
+      font-family: "Baloo Bhaina 2", sans-serif;
       margin: 0;
       padding: 0;
-      color: #bd1c4a;
-      flex-direction: column;
-      align-items: center;
-      display: flex;
       line-height: 1;
-      font-family: "Baloo Bhaina 2", sans-serif;
     }
     html {
-      background-image: url(http://ikasnake.com/backdrop.png);
-      background-size: 120vw auto;
-      background-repeat: no-repeat;
       background-color: #140320;
+      background-image: url(http://ikasnake.com/backdrop.png);
+      background-position-x: -10vw;
+      background-repeat: no-repeat;
+      background-size: 120vw auto;
     }
     * {
       box-sizing: border-box;
@@ -37,35 +38,37 @@
     }
     .container main {
       margin-bottom: 32px;
+      text-align: center;
     }
     .container h1 {
+      /*color: #801836; */
       font-size: 28px;
       margin: 0 0 4px;
-      /*color: #801836; */
     }
-    .container h2 {
+    .container main h2 {
+      border-bottom: 2px solid #6d09a9;
+      color: #6d09a9;
+      display: inline-block;
       font-size: 46px;
       font-family: "Monoton", sans-serif;
-      margin: 0 0 16px;
-      color: #6d09a9;
       font-weight: normal;
+      margin: 0 auto 16px auto;
       padding-bottom: 8px;
-      border-bottom: 2px solid #6d09a9;
       text-transform: uppercase;
     }
     .container h3 {
-      margin: 0 0 64px;
       font-size: 32px;
+      margin: 0 0 64px;
       text-align: center;
     }
     .poster {
-      margin-bottom: 12px;
       display: flex;
       justify-content: center;
+      margin-bottom: 12px;
     }
     .poster img {
-      padding: 2px;
       border-radius: 2px;
+      padding: 2px;
     }
 
     .footer-actions {
@@ -73,13 +76,13 @@
       justify-content: center;
     }
     .footer-action {
-      font-size: 28px;
-      border: 2px solid #004da3;
-      padding: 12px 16px 8px;
       background-color: #00326a;
+      border: 2px solid #004da3;
       color: #eee;
       display: inline-block;
       border-radius: 6px;
+      font-size: 28px;
+      padding: 12px 16px 8px;
       margin-bottom: 24px;
       text-decoration: none;
     }
@@ -89,8 +92,11 @@
       color: #eee;
     }
     .footer h3 {
-      margin: 0;
       font-size: 24px; 
+      margin: 0;
+    }
+    .faq {
+      padding-top: 24px;
     }
     .faq ul {
       list-style: none;
@@ -100,27 +106,27 @@
       font-size: 20px;
     }
     .faq label:hover h4 {
-      text-decoration: underline;
       cursor: pointer;
+      text-decoration: underline;
     }
     .faq input {
       display: none;
     }
     .faq p {
-      height: 0;
-      overflow: hidden;
-      border-left: 3px solid #0f0;
-      padding-left: 16px;
-      background-color: #222;
       color: #eee;
+      background-color: #222;
+      border-left: 3px solid #0f0;
+      height: 0;
       line-height: 1.25;
-      transition: height 200ms linear;
       margin: 0;
+      overflow: hidden;
+      padding-left: 16px;
+      transition: height 200ms linear;
     }
     .faq input:checked + p {
       height: 50px;
-      padding-top: 4px;
       padding-bottom: 4px;
+      padding-top: 4px;
     }
   </style>
 </head>
@@ -128,34 +134,39 @@
 <body>
   <div class="container">
     <main>
-      <h1>You're invited to:</h1>
-      <h2>Big &nbsp;&nbsp;Snake &nbsp;&nbsp;Extravaganza!</h1>
-      <h3>May 2<sup>nd</sup> 6:00pm SLT/PDT</h3>
+      <h1>First Saturday Monthly</h1>
+      <h2>Extravaganza!</h2>
+      <h3>June 6<sup>th</sup> 6:00pm SLT/PDT</h3>
       <div class="poster">
+        <!--
         <a class="poster-action" href="https://docs.google.com/forms/d/e/1FAIpQLSdj8-q1BAeUYlIuhmOeLiWniSE87O4Lt_rC-72HNKfUX548FQ/viewform?usp=sf_link">
           <img src="http://ikasnake.com/poster.png" alt="Big snake extravaganza, click to leave feedback" />
         </a>
+        -->
+        <img src="http://ikasnake.com/poster.png" alt="Big snake extravaganza, click to leave feedback" />
       </div>
     </main>
     <footer class="footer">
+      <!--
       <div class="footer-actions">
-        <a class="footer-action" href="https://docs.google.com/forms/d/e/1FAIpQLSdj8-q1BAeUYlIuhmOeLiWniSE87O4Lt_rC-72HNKfUX548FQ/viewform?usp=sf_link">Feedback</a>
+        <a class="footer-action" href="TODO">Feedback</a>
       </div>
+      -->
       <section class="faq">
-        <h3>FAQ</h2>
+        <h2>FAQ</h2>
         <ul>
           <li>
             <label>
-              <h4>Feedback, really?</h4>
+              <h4>Why monthly?</h4>
               <input type="checkbox" />
-              <p>Maybe we can do this again, semi-regular. Just a short survey.</p>
+              <p>There was enough interest to have another house party.</p>
             </label>
           </li>
           <li>
             <label>
               <h4>Why was this date and time choosen?</h4>
               <input type="checkbox" />
-              <p>There was a small vote to try and be most acommadating as everyone's schedules are a little different. If you are there early some people might show up though :D</p>
+              <p>Survey results showed the majority of people wanted it around the same time. Therefore, first Saturday of the next month.</p>
             </label>
           </li>
           <li>
@@ -169,7 +180,7 @@
             <label>
               <h4>Why?</h4>
               <input type="checkbox" />
-              <p>For friendship!</p>
+              <p>So people have a date and time they might reconnect with others. For friendship!</p>
             </label>
           </li>
         </ul>
